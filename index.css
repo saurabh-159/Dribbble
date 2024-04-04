@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+}
+
+#page_1{
+    height: 100%;
+    width: 100%;
+    /* background-color: brown; */
+}
+#nav{
+    height: 120px;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+}
+
+#part_1{
+    /* height: 100%; */
+    width: 30%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#part_2{
+    /* height: 100%; */
+    /* width: 30%; */
+    /* background-color: red; */
+}
+#part_2 img{
+    /* height: 70%; */
+}
+#nav img{
+    height: 8vw;
+}
+ 
+
+#part_3{
+    /* height: 100%; */
+    width: 30%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#part_3 button{
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 2px;
+}
+
+#part_3 button:nth-child(1){
+  background: transparent;  
+  color: black;
+}
+
+#centre_1{
+    height: calc(100% - 120px);
+    width: 100%;
+    /* background-color: rgb(29, 205, 32); */
+}
+
+#centre_1{
+    padding-top: 2vw;
+
+}
+#centre_1 h3{
+background-color: #F3B0EB;
+padding: 12px 16px;
+width: fit-content;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+font-size: 17px;
+border-radius: 50px;
+font-weight: 100;
+}
+
+
+#centre_1 h1{
+    text-align: center;
+    font-size: 80px;
+    margin: 15px 0px;
+    font-family:  "Source Serif 4";
+    font-weight: 100;
+}
+
+#centre_1 h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#centre_1 button{
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 20px;
+    position: relative;
+    left: 50%;
+transform: translateX(-50%);
+}
+
+ #container{
+    height: 20vw;
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;   
+    /* padding: 1vw; */
+ }
+#block{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+     display: inline-block;
+    /* padding: 1vw; */
+    animation-name: scroll;
+    animation-duration: 9s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+#blocks{
+    height: 100%;
+    width: 18vw; 
+     /* background-color: rgb(179, 218, 20); */
+     display: inline-block;
+     border-radius: 40px;
+     overflow: hidden;
+     margin:0 0 1vw 1.3vw;
+     position:relative ;
+}
+#blocks img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#blocks video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+ 
+ @keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+to{
+    transform: translateX(calc(-100% - 4px));
+}
+ }
+
+ #block_down{
+    height: 50%;
+    width: 100%;
+    /* background-color: white; */
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 3vw;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+ }
+ #block_down h5{
+    text-align: center;
+    font-size: 1.3vw;
+    margin: 15px 0px;
+    font-family:  "Source Serif 4";
+    font-weight: 600;
+ }
+
+ #page_2{
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    margin-top: 30vw;
+padding:2vw ;
+position: relative;
+ }
+
+ #page_2 h1{
+   text-align: center; 
+   font-size: 4vw;
+   font-weight: 700;
+   font-family: Mona Sans ExtraLight;
+   margin-bottom: 2vw;
+ }
+ #box{
+    height: 20vw;
+    width: 21vw;
+    background-color: aqua;
+    margin: 0vw 0vw 1vw 2vw;
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+ }
+
+ #box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ }
+ #box_down{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(transparent,black);
+bottom: -50%;
+transition: all ease 0.3s;
+ }
+ #box:hover #box_down{
+    bottom: 0;
+    
+ }
+ #box_down h5{
+color: white;
+font-size: 1.5vw;
+font-weight: bold;
+font-family: Mona Sans ExtraLight;
+margin-top: 2vw;
+ }
+ #box_down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+ }
+ #icon{
+    margin-top: 1vw;
+    padding: 0.5vw;
+    background-color: white;
+    font-size: 2vw;
+    border-radius: 50%;
+ }
+ #page_3{
+    margin-top: 70vw;
+    height: 90%;
+    width: 100%;
+    background-color: #FFDA79;
+    padding-top: 5vw;
+ }
+ #page_3 h1{
+    text-align: center;
+    font-size: 4vw;
+    font-family:  "Source Serif 4";
+    font-weight: 500;
+ }
+ #page_3 h5{
+    text-align: center;
+    font-size: 1vw;
+    font-family: Mona Sans ExtraLight;
+    font-weight: 900;
+    padding-top: 2vw;
+ }
+
+ #page_3 button{
+    position: relative;
+    left: 39%;
+    
+     /* padding: 1vw; */
+    /* margin: 1vw; */
+    margin-top: 1vw;
+    border-radius: 40px;
+    font-size: 1vw;
+
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background-color: black;
+    color: white;
+    /* margin: 2px; */
+ }
+ #page_3 button:nth-child(1){
+    background: transparent;  
+    color: black;
+  }
+  #page_3 h3{
+    text-align: center;
+    /* font-size: vw; */
+    font-family:  "Source Serif 4";
+    font-weight: 500;
+    margin-top: 1vw;
+ }
+
+ #last_nav{
+    height: 30%;
+    width: 100%;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ #last_img img{
+    height: 100%;
+    width: 100%;
+ }
+#last_img{
+    height: 60%;
+    width: 20%;
+    /* border: 2px solid black; */
+object-fit: cover;
+background-color: red;
+}
+#last_nav h5{
+    font-size: 18px;
+    font-family: Mona Sans ExtraLight;
+}
+
+#last_logo{
+    font-size: 20px;
+    
+}
